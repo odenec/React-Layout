@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+
+  height: 100vh;
+}
+.active {
+  color: lawngreen;
+  text-decoration: none;
+}
+body {
+  margin: auto;
+  color: white;
+  background-color: rgba(15, 9, 48, 0.815);
+  /* #112d49 */
+}
+a {
+  color: lightblue;
+  font-size: 25px;
+}
+@media screen and (min-width: 1400px) {
+  body {
+    width: 1400px;
+  }
+}

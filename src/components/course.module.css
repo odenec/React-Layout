@@ -1,0 +1,60 @@
+.header {
+  width: 100%;
+}
+.textObject {
+  display: block;
+  text-align: center;
+  margin-bottom: 60px;
+
+  margin-left: 50px;
+  font-size: 2rem;
+
+  text-decoration: none;
+  transition: 0.3s;
+}
+.textObject:hover {
+  transform: translateX(10px);
+  color: white;
+  text-decoration: underline;
+}
+
+.containerCouresRef {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  transition: all 0.3s;
+  margin-bottom: 50px;
+}
+.course {
+  display: none;
+  width: 47%;
+  height: 350px;
+  animation: cube 1s;
+  background-color: black;
+  border-radius: 3px;
+}
+.containerRefDiv {
+  display: flex;
+  overflow: auto;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+@keyframes cube {
+  to {
+    scale: 1;
+  }
+  from {
+    scale: 1.2;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .containerRefDiv {
+    justify-content: start;
+  }
+  .course {
+    display: block;
+  }
+  .textObject {
+    text-align: start;
+  }
+}

@@ -1,0 +1,30 @@
+.container {
+  overflow: auto;
+}
+.picture1 {
+  height: 350px;
+  width: 70%;
+  background-color: azure;
+  border-radius: 3px;
+  margin: 0px auto;
+  margin-bottom: 50px;
+}
+.picture2 {
+  height: 350px;
+  width: 70%;
+  background-color: azure;
+  border-radius: 3px;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 1400px) {
+  .containerPicture {
+    display: flex;
+  }
+  .picture2 {
+    width: 45%;
+  }
+  .picture1 {
+    width: 45%;
+  }
+}

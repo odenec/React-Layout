@@ -1,0 +1,84 @@
+.navAll {
+  position: absolute;
+  height: 100vh;
+  display: flex;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: darkslateblue;
+  margin-bottom: 50px;
+  z-index: 2;
+}
+.nav2 {
+  width: 100%;
+  position: absolute;
+  top: 70px;
+  display: flex;
+  justify-content: center;
+
+  animation: down 0.3s;
+  z-index: 1;
+}
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translateY(-60px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+.navText {
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.2s;
+  margin: 25px 10px 25px 10px;
+}
+.navText2 {
+  color: lightblue;
+  text-decoration: none;
+  font-size: 30px;
+  transition: color 0.2s;
+  margin: 25px 10px 25px 10px;
+}
+.animationBottonBar {
+  animation: downUp 0.3s;
+  animation-fill-mode: forwards;
+  z-index: -100;
+}
+@keyframes downUp {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-100px);
+    display: none;
+  }
+}
+.navText:hover {
+  color: white;
+  text-decoration: underline;
+}
+.navText2:hover {
+  color: white;
+  text-decoration: underline;
+}
+.navH3 {
+  font-size: 25px;
+  margin: 25px;
+}
+.navH32 {
+  font-size: 25px;
+  margin: 25px;
+}
+@media screen and (min-width: 1400px) {
+  .navText {
+    margin: 25px;
+  }
+  .navText2 {
+    margin: 25px;
+  }
+}

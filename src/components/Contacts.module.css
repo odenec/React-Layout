@@ -1,0 +1,26 @@
+.container {
+  overflow: hidden;
+  height: 75vh;
+}
+.number {
+  animation: number 10s infinite;
+
+  left: calc(50% - 225px);
+}
+@keyframes number {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(350px, 350px);
+  }
+  50% {
+    transform: translate(0px, 900px);
+  }
+  75% {
+    transform: translate(-350px, 350px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
